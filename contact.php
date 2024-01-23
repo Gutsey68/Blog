@@ -1,5 +1,7 @@
 <?php
+$strPage = "contact";
 $strTitle = "Contact";
+$strDesc = "Page de contact";
 	include("_partial\header.php");
 ?>
 			<div class="row g-5">

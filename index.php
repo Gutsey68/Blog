@@ -1,5 +1,7 @@
 <?php
+$strPage = "index";
 $strTitle = "Acceuil";
+$strDesc = "Page affichant les 4 derniers articles";
 	include("_partial/header.php");
 ?>
 			<div class="row mb-2">

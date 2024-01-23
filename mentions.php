@@ -1,5 +1,7 @@
 <?php
+$strPage = "mentions";
 $strTitle = "Mentions légales";
+$strDesc = "Page de contenu";
 	include("_partial\header.php");
 ?>
 

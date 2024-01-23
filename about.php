@@ -1,5 +1,7 @@
 <?php
+$strPage = "about";
 $strTitle = "A propos";
+$strDesc = "Page de contenu";
 	include("_partial\header.php");
 ?>
 

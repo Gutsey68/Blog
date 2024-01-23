@@ -1,5 +1,7 @@
 <?php
+$strPage = "blog";
 $strTitle = "Blog";
+$strDesc = "Page affichant tous les articles, avec une zone de recherche sur les articles";
 	include("_partial\header.php");
 ?>
 
