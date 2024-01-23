@@ -1,3 +1,5 @@
+</main>
+
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
 			<p>Créé par <a href="https://ce-formation.com/">CE FORMATION</a>.</p>
 			<p>
@@ -7,7 +9,7 @@
 				<a href="#">Back to top</a>
 			</p>
 		</footer>
-	<?php if($strTitle == "Blog") echo("<script>
+	<?php if($strPage == "blog") echo("<script>
 			changePeriod();
 		</script>")
 	

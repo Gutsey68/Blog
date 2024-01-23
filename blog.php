@@ -87,7 +87,6 @@ $strDesc = "Page affichant tous les articles, avec une zone de recherche sur les
 					</div>
 				</article>				
 			</div>
-		</main>
 
 		<?php
 			include("_partial/footer.php");

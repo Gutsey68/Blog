@@ -14,7 +14,6 @@ $strDesc = "Page de contenu";
 						<p>Suspendisse nec sollicitudin odio, ac pretium nisi. Phasellus ut justo velit. Vestibulum egestas sodales sem, quis commodo massa elementum vel. Phasellus pretium enim ipsum, et auctor lorem egestas eu. Integer luctus pharetra tristique. Vivamus tincidunt nunc eu fermentum sodales. Aliquam egestas ut tortor eget fermentum. Vivamus eget interdum sapien, consectetur eleifend odio. Nam sed faucibus risus, et faucibus lacus. Nulla facilisi.</p>
 				</div>
 			</div>
-		</main>
 
 		<?php
 			include("_partial/footer.php");

@@ -19,6 +19,10 @@
 		<!-- Custom styles for this template -->
 		<link href="assets/css/blog.css" rel="stylesheet">
 		<link href="assets/css/custom.css" rel="stylesheet">
+		
+		<?php if($strPage == "blog") echo("<script src='assets/js/period.js'> </script>")
+		?>
+		
 	</head>
 	<body>
 		<div class="container">

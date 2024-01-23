@@ -74,7 +74,6 @@ $strDesc = "Page de contact";
 				</div>
 
 			</div>
-		</main>
 
 		<?php
 			include("_partial/footer.php");
