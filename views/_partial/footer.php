@@ -1,6 +1,6 @@
-</main>
+		</main>
 
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+		<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
 			<p>Créé par <a href="https://ce-formation.com/">CE FORMATION</a>.</p>
 			<p>
 				<a href="mentions.php">Mentions légales</a> | <a href="contact.php">Contact</a>
@@ -9,10 +9,14 @@
 				<a href="#">Back to top</a>
 			</p>
 		</footer>
-	<?php if($strPage == "blog") echo("<script>
+		<?php 
+			if ($strPage == "blog"){
+		?>
+		<script>
 			changePeriod();
-		</script>")
-	
-	?>
+		</script>		
+		<?php
+			}
+		?>		
     </body>
 </html>

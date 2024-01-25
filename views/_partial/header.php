@@ -19,10 +19,13 @@
 		<!-- Custom styles for this template -->
 		<link href="assets/css/blog.css" rel="stylesheet">
 		<link href="assets/css/custom.css" rel="stylesheet">
-		
-		<?php if($strPage == "blog") echo("<script src='assets/js/period.js'> </script>")
+		<?php 
+			if ($strPage == "blog"){
 		?>
-		
+		<script src="assets/js/period.js"></script>
+		<?php
+			}
+		?>
 	</head>
 	<body>
 		<div class="container">
@@ -34,11 +37,11 @@
 						<a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Mon blog</a>
 					</div>
 					<div id="user" class="col-4 d-flex justify-content-end align-items-center">
-						<a class="btn btn-sm" href="create_account.html" title="Se connecter">
+						<a class="btn btn-sm" href="create_account.php" title="Se connecter">
 							<i class="fas fa-user"></i>
 						</a>
 						| 
-						<a class="btn btn-sm" href="login.html" title="Se connecter">
+						<a class="btn btn-sm" href="login.php" title="Se connecter">
 							<i class="fas fa-sign-in-alt"></i>
 						</a> 
 					</div>
@@ -46,16 +49,15 @@
 			</header>
 
 			<?php
-			
-			include("nav.php");
-			
+				include("views/_partial/nav.php");
 			?>
 		</div>
 
 		<main class="container">
+
 			<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
 				<div class="col-lg-6 px-0">
-					<h1 class="display-4 fst-italic"><?php echo($strTitle) ?></h1>
-					<p class="my-3"><?php echo($strDesc) ?></p>
+					<h1 class="display-4 fst-italic"><?php echo($strTitle); ?></h1>
+					<p class="my-3"><?php echo($strDesc); ?></p>
 				</div>
 			</div>

@@ -1,8 +1,8 @@
 <?php
-$strPage = "contact";
-$strTitle = "Contact";
-$strDesc = "Page de contact";
-	include("_partial\header.php");
+	$strPage	= "contact";
+	$strTitle 	= "Contact";
+	$strDesc	= "Page de contact";
+	include("views/_partial/header.php");
 ?>
 			<div class="row g-5">
 				<div class="col-md-4">
@@ -74,8 +74,6 @@ $strDesc = "Page de contact";
 				</div>
 
 			</div>
-
-		<?php
-			include("_partial/footer.php");
-		
-		?>
+<?php
+	include("views/_partial/footer.php");
+?>
