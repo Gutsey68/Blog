@@ -12,6 +12,18 @@ $strDesc = "Page affichant les 4 derniers articles";
 	$arrArticles	= $db->query($strQuery)->fetchAll();
 	//define("MAX_CONTENT", 50);
 	const MAX_CONTENT = 50;
+	
+	/* Utilisation des classes */
+	
+	include_once("article_entity.php"); // inclure la classe 
+	$objArticle = new Article();        // instancie un objet article
+	
+	// var_dump($objArticle->getId());
+	
+	/* $arrArticle = array (
+		
+	);
+	$objArticle->hydrate($arrArticle); */
 ?>
 			<div class="row mb-2">
 			<?php
