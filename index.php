@@ -1,35 +1,29 @@
-<?php
-	// Variable fonctionnelle qui définit la page en cours
-	$strPage	= "index";
-	// Variable d'affichage du titre
-	$strTitle 	= "Accueil";
-	// Variable d'affichage de la description
-	$strDesc	= "Page affichant les 4 derniers articles";
-	include("views/_partial/header.php");
-
-	/* Utilisation de la classe model */
-	include_once("models/article_model.php");
-	$objArticleModel	= new ArticleModel;
-	$arrArticles		= $objArticleModel->findAll(4);
-
-	// Parcourir les articles pour créer des objets
-	$arrArticlesToDisplay	= array();
-	include_once("entities/article_entity.php"); // inclure la classe
-	foreach($arrArticles as $arrDetailArticle){	
-		$objArticle = new Article();		// instancie un objet Article
-		$objArticle->hydrate($arrDetailArticle);
-		$arrArticlesToDisplay[] = $objArticle;
+<?php 
+	/* Dispatche */
+	$strAction = $_GET['action']??'home';
+	$strCtrl = $_GET['ctrl']??'article';
+	$strFileName = "controllers/".$strCtrl."_controller.php";
+	$bool404 = false;
+	
+	if(file_exists($strFileName)){ // Test si le fichier existe
+		include($strFileName);
+		$strClassName = ucfirst($strCtrl)."Ctrl";
+		// Test si le nom de classe existe
+		if (class_exists($strClassName)) {
+			$objCtrl = new $strClassName();
+			// Test si la méthode existe dans l'objet controller
+			if (method_exists($objCtrl ,$strAction )){
+				$objCtrl ->$strAction();
+			}else {
+				$bool404 = true;
+			}
+		} else {
+			$bool404 = true;
+		}
+	} else {
+		$bool404 = true;
 	}
 	
-	const MAX_CONTENT = 50;
-?>
-	<div class="row mb-2">
-	<?php 
-		foreach($arrArticlesToDisplay as $objArticle){ 
-			include("views/article.php");
-		} 
-	?>
-	</div>
-<?php
-	include("views/_partial/footer.php");
-?>
+	if ($bool404) {
+		header('Location:index.php?action=show404&ctrl=error');
+	}

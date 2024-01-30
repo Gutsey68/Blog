@@ -7,7 +7,7 @@
 				(<?php echo($objArticle->getCreator()); ?>)
 			</div>
 			<p class="mb-auto">
-				<?php echo($objArticle->getContentSummary(MAX_CONTENT)); ?>
+				<?php echo($objArticle->getContentSummary(ArticleCtrl::MAX_CONTENT)); ?>
 			</p>
 			<a href="#" class="icon-link gap-1 icon-link-hover stretched-link">Lire la suite</a>
 		</div>

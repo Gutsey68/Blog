@@ -37,11 +37,11 @@
 						<a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Mon blog</a>
 					</div>
 					<div id="user" class="col-4 d-flex justify-content-end align-items-center">
-						<a class="btn btn-sm" href="create_account.php" title="Se connecter">
+						<a class="btn btn-sm" href="index.php?action=create_account&ctrl=user" title="Créer un compte">
 							<i class="fas fa-user"></i>
 						</a>
 						| 
-						<a class="btn btn-sm" href="login.php" title="Se connecter">
+						<a class="btn btn-sm" href="index.php?action=login&ctrl=user" title="Se connecter">
 							<i class="fas fa-sign-in-alt"></i>
 						</a> 
 					</div>

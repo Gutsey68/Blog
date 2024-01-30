@@ -1,10 +1,4 @@
-<?php
-	$strPage	= "mentions";
-	$strTitle 	= "Mentions légales";
-	$strDesc	= "Page de contenu";
-	include("views/_partial/header.php");
-?>
-			<div class="row g-5">
+<div class="row g-5">
 				<div class="col-md-12">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, nibh quis tristique pellentesque, elit erat venenatis mi, id posuere elit quam et sapien. Fusce gravida, enim et tempor efficitur, dolor nunc feugiat metus, ac egestas dolor elit eget sem. Pellentesque pretium vitae tellus in viverra. Quisque euismod sem quis suscipit aliquam. Morbi sit amet massa ut purus scelerisque pharetra. Aliquam non ex non libero placerat faucibus eget ut risus. Donec imperdiet turpis vel iaculis tincidunt. Aliquam volutpat tempor ante quis accumsan. Etiam suscipit elit sapien. Vestibulum ante dui, gravida a malesuada sed, interdum id metus. Fusce ex tellus, rhoncus et tortor id, consectetur dictum mauris. Aliquam tempor, mi eu semper dapibus, nibh tortor iaculis purus, vitae hendrerit ex tellus at felis.</p>
 						<p>Donec consequat mauris a magna pharetra, non tincidunt sem cursus. Nullam vehicula turpis a leo convallis, sit amet commodo tortor accumsan. Ut faucibus tellus vitae purus ullamcorper rutrum. Cras sollicitudin nunc in dictum maximus. Fusce volutpat pulvinar rhoncus. Suspendisse blandit suscipit eros eu sodales. Proin eget mi scelerisque, cursus elit semper, commodo diam. Nam magna nulla, euismod et bibendum ac, dictum sit amet dui. Quisque aliquam dolor eget ligula convallis consectetur. Integer nec nisi ullamcorper, tempor eros in, volutpat mi. Proin nec nisi vitae metus facilisis porta. In sed dignissim lorem, sit amet blandit neque. Suspendisse mattis arcu fringilla libero pulvinar faucibus. Pellentesque mattis enim quis dapibus tempor. Mauris scelerisque eros sed nisl accumsan, sit amet auctor lorem tempor.</p>
@@ -13,6 +7,3 @@
 						<p>Suspendisse nec sollicitudin odio, ac pretium nisi. Phasellus ut justo velit. Vestibulum egestas sodales sem, quis commodo massa elementum vel. Phasellus pretium enim ipsum, et auctor lorem egestas eu. Integer luctus pharetra tristique. Vivamus tincidunt nunc eu fermentum sodales. Aliquam egestas ut tortor eget fermentum. Vivamus eget interdum sapien, consectetur eleifend odio. Nam sed faucibus risus, et faucibus lacus. Nulla facilisi.</p>
 				</div>
 			</div>
-<?php
-	include("views/_partial/footer.php");
-?>
